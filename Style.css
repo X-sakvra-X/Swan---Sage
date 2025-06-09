@@ -1,0 +1,84 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Bonheur Royale', cursive;
+  transition: background-color 0.5s ease;
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  background-image: url("ballet-video-placeholder.jpg"); /* Replace with video or gif */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* For contrast */
+  z-index: 1;
+}
+
+.centered-content {
+  position: relative;
+  text-align: center;
+  color: #f5f5f5;
+  z-index: 2;
+}
+
+.centered-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #ffc857;
+  letter-spacing: 2px;
+}
+
+.centered-content .tagline {
+  font-family: 'Mea Culpa', cursive;
+  font-size: 1.8rem;
+  color: #ffffffcc;
+  margin-top: 10px;
+}
+
+.scroll-down {
+  font-size: 2rem;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+}
+
+.theme-toggle img {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle img:hover {
+  transform: scale(1.2);
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .centered-content h1 {
+  color: #DAA520;
+}
