@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Products | Swan & Sage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/ProductStyle.css" />
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+
+    <!-- Header -->
+    <header class="main-nav">
+    <img src="/Images/Logo.png" alt="Swan & Sage Logo" class="nav-logo" />
+    
+    <div id="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav role="navigation" style="font-family: Bonheur Royale, cursive; font-weight: 400; font-style: normal;">
+        <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li class="dropdown">
+            <a href="Product.html">Products</a>
+            <ul class="dropdown-menu">
+            <li><a href="#clothing">Clothing</a></li>
+            <li><a href="#wellness">Wellness</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            </ul>
+        </li>
+        <li><a href="Classes.html">Classes</a></li>
+        <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="nav-icons">
+        <img src="/Images/Search.png" alt="Search">
+        <img src="/Images/Cart.png" alt="Cart">
+        <img src="/Images/Profile.png" alt="User">
+        <img src="/Images/Toggle.png" alt="Toggle Theme" id="toggleTheme">
+    </div>
+  
+    </header>
+
+    <!-- Promo Banner -->
+    <section class="promo-strip" aria-label="Promotion">
+    <p>New: Swan & Sage Wellness Kits 🕊️ — <a href="#wellness">Shop Now</a></p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="products-page">
+    <h1 class="page-title">Our Products</h1>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar" aria-label="Product Filters">
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+        <option>Featured</option>
+        <option>Price: Low–High</option>
+        <option>Price: High–Low</option>
+        </select>
+    </section>
+
+    <!-- Clothing -->
+    <section id="clothing" class="product-section">
+        <h2>Clothing</h2>
+        <div class="product-grid">
+        <div class="product-card">
+            <img src="/Images/Leotard.png" alt="Classic Black Leotard" />
+            <h3>Classic Black Leotard</h3>
+            <p>$45</p>
+            <button class="quick-buy">Quick Buy</button>
+        </div>
+        <div class="product-card">
+            <img src="/Images/ChiffonWrapSkirt.png" alt="Chiffon Wrap Skirt" />
+            <h3>Chiffon Wrap Skirt</h3>
+            <p>$35</p>
+            <button class="quick-buy">Quick Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wellness -->
+    <section id="wellness" class="product-section">
+      <h2>Wellness Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="/Images/SageOil.png" alt="Sage Calm Oil" />
+          <h3>Sage Calm Oil</h3>
+          <p>$25</p>
+          <button class="quick-buy">Quick Buy</button>
+        </div>
+        <div class="product-card">
+          <img src="/Images/MuscleSalve.png" alt="Recovery Balm" />
+          <h3>Recovery Balm</h3>
+          <p>$22</p>
+          <button class="quick-buy">Quick Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessories -->
+    <section id="accessories" class="product-section">
+      <h2>Accessories</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="/Images/BalletBag.png" alt="Embroidered Ballet Bag" />
+          <h3>Embroidered Ballet Bag</h3>
+          <p>$60</p>
+          <button class="quick-buy">Quick Buy</button>
+        </div>
+        <div class="product-card">
+          <img src="/Images/PointeCushion.png" alt="Pointe Cushion Pad Set of 3" />
+          <h3>Pointe Cushion Pads (Set of 3)</h3>
+          <p>$12</p>
+          <button class="quick-buy">Quick Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Get 10% Off Your First Order</h2>
+      <form>
+        <input type="email" placeholder="Your email" aria-label="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Swan & Sage. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="/Images/InstagramLogo.png" alt="Instagram"></a>
+      <a href="#"><img src="/Images/TiktokLogo.png" alt="TikTok"></a>
+      <a href="#"><img src="/Images/EmailLogo.png" alt="Email"></a>
+    </div>
+  </footer>
+
+  <script src="JavaScript/Script.js"></script>
+</body>
+</html>

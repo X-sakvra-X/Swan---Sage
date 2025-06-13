@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classes | Swan & Sage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Mea+Culpa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/ClassesStyle.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-nav">
+    <img src="/Images/Logo.png" alt="Swan & Sage Logo" class="nav-logo" />
+    
+    <div id="menu-toggle" class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+    <nav role="navigation">
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="Product.html">Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="Product.html#clothing">Clothing</a></li>
+            <li><a href="Product.html#wellness">Wellness</a></li>
+            <li><a href="Product.html#accessories">Accessories</a></li>
+          </ul>
+        </li>
+        <li><a href="Classes.html">Classes</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <img src="/Images/Search.png" alt="Search">
+      <img src="/Images/Cart.png" alt="Cart">
+      <img src="/Images/Profile.png" alt="User">
+      <img src="/Images/Toggle.png" alt="Toggle Theme" id="toggleTheme">
+    </div>
+  </header>
+
+  <!-- Promo Banner -->
+  <section class="promo-strip" aria-label="Promotion">
+    <p>✨ Summer Ballet Series Now Open! — <a href="#schedule">Reserve Your Spot</a></p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="classes-page">
+    <h1 class="page-title">Our Classes</h1>
+
+    <!-- Class Section -->
+  <section class="class-section">
+    <div class="section-header">
+      <h2>Class Categories</h2>
+      <div class="filter-bar">
+        <label for="filter">Filter:</label>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="flexibility">Flexibility</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="class-grid">
+      <div class="class-card" data-level="beginner">
+        <img src="/Images/Beginners.png" alt="Beginner Ballet Class" />
+        <h3>Beginner Ballet</h3>
+        <p>Build foundational strength, posture, and grace. No prior experience needed.</p>
+        <button class="quick-join">Join Now</button>
+      </div>
+
+      <div class="class-card" data-level="flexibility">
+        <img src="/Images/Stretching.png" alt="Stretch & Conditioning Class" />
+        <h3>Stretch & Strength</h3>
+        <p>Improve flexibility and muscular support through targeted workouts.</p>
+        <button class="quick-join">Join Now</button>
+      </div>
+
+      <div class="class-card" data-level="intermediate">
+        <img src="/Images/Pointe.png" alt="Pointe Class" />
+        <h3>Pointe Preparation</h3>
+        <p>For intermediate dancers ready to explore pre-pointe and pointe work.</p>
+        <button class="quick-join">Join Now</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- Class Schedule -->
+    <section class="schedule" id="schedule">
+      <h2 style="font-family: Bonheur Royale, cursive; font-weight: 400; font-style: normal; font-size: 2rem;">
+        Weekly Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Class</th>
+            <th>Time</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Beginner Ballet</td>
+            <td>4:00 PM – 5:00 PM</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Stretch & Strength</td>
+            <td>6:00 PM – 7:00 PM</td>
+            <td>All Levels</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Pointe Preparation</td>
+            <td>5:30 PM – 6:30 PM</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Stay In the Loop</h2>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Swan & Sage. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="/Images/InstagramLogo.png" alt="Instagram"></a>
+      <a href="#"><img src="/Images/TiktokLogo.png" alt="TikTok"></a>
+      <a href="#"><img src="/Images/EmailLogo.png" alt="Email"></a>
+    </div>
+  </footer>
+
+  <script src="JavaScript/Script.js"></script>
+</body>
+</html>

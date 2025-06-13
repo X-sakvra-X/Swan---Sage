@@ -1,0 +1,168 @@
+body {
+  font-family: "Chiron Sung HK", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.6;
+  background-color: #e8dbc3;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #121212;
+  color: white;
+}
+
+/* Navigation */
+.nav-logo {
+  height: 40px;
+}
+
+.nav-links {
+  font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-icons img {
+  width: 24px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 6px;
+    list-style: none;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #251400, #1b0c00);
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: 'Bonheur Royale', cursive;
+  color: #c79530;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.cta-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #c79530;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffb347;
+  transform: scale(1.05);
+}
+
+.hero-image img {
+  width: 370px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.feature-card {
+  width: 30%;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px #000;
+}
+
+.feature-card h3 {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.quote {
+  background-color: #121212;
+  color: #eee;
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.main-footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-footer p {
+  font-family:'Courier New', Courier, monospace;
+}
+
+.socials img {
+  width: 20px;
+  margin: 0 10px;
+}

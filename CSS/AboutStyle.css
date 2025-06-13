@@ -1,0 +1,215 @@
+/* Base Reset & Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Chiron Sung HK", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #e8dbc3;
+    color: #222;
+    padding: 2rem;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b0c00;
+    padding: 1rem 2rem;
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-icons img {
+    height: 24px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 6px;
+    list-style: none;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  font-family: 'Bonheur Royale', cursive;
+  margin-bottom: 1rem;
+  color: #c79530;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #3c2f2f;
+  max-width: 500px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+.mission-values {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mission-values h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #1b0c00;
+  font-family: 'Bonheur Royale', cursive;
+}
+
+.mission-values p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: #444;
+}
+
+/* Pillars */
+.pillars {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pillar {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-8px);
+}
+
+.pillar h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #c79530;
+}
+
+.pillar p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* CTA Section */
+.call-to-action {
+  background-color: #fff9ed;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1b0c00;
+}
+
+.call-to-action p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #5a4635;
+}
+
+.cta-button {
+  background-color: #ffc857;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a72c;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pillars {
+    flex-direction: column;
+    align-items: center;
+  }
+}
