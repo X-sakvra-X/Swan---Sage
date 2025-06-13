@@ -22,3 +22,4 @@ window.addEventListener("load", () => {
     preloader.style.display = "none";
   }, 500); // matches CSS transition
 });
+

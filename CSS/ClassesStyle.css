@@ -119,13 +119,81 @@ body {
     border: 1px solid #ccc;
 }
 
-/* Classes Grid & Cards */
+/* Class Grid & Cards */
 .class-section {
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    padding: 2rem;
 }
 
+.class-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffc857;
+    display: inline-block;
+}
+
+.class-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.class-card {
+    font-family: "Chiron Sung HK", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.12);
+}
+
+.class-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.class-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.class-card p {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Quick join Button */
+.quick-join {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffc857;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.class-card:hover .quick-buy {
+    opacity: 1;
+}
 .section-header {
     font-family: "Bonheur Royale", cursive;
     font-weight: 400;
@@ -164,26 +232,6 @@ body {
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 1rem;
-}
-
-.class-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.class-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #ffc857;
-    display: inline-block;
-}
-
-.class-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
 }
 
 /* Card Style */
@@ -414,4 +462,37 @@ body {
 
 .schedule tr:hover {
     background-color: #f5f5f5;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    border: 5px solid #ffc857;
+    border-top: 5px solid #1a1a1a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide main content initially */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
